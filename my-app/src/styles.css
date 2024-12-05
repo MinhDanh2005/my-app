@@ -1,0 +1,237 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #bbbaba, #e0e0e0);
+  color: #333;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0a500;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f0a500;
+}
+
+nav .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-icons a,
+nav .nav-icons button {
+  margin: 0 10px; /* Khoảng cách giữa các biểu tượng */
+  font-size: 20px; /* Kích thước biểu tượng */
+  color: white; /* Màu biểu tượng */
+  text-decoration: none; /* Xóa gạch chân */
+  border: none; /* Xóa viền nếu có */
+  background: none; /* Xóa nền */
+}
+
+nav .nav-icons a:hover,
+nav .nav-icons button:hover {
+  color: #f0a500; /* Màu khi hover */
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Thêm hiệu ứng khi di chuột */
+}
+
+.product img:hover {
+  transform: scale(1.1); /* Phóng to ảnh khi hover */
+}
+
+.product h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product p {
+  color: #555;
+}
+
+.product button {
+  background-color: #1f0e0e;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.product button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+footer button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background-color: #45a049;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.checkout-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* CSS cho giỏ hàng */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.checkout-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  background-color: #0056b3;
+}
+/* Thu nhỏ ảnh cho sản phẩm với id 4, 5, 6 */
+.small-image {
+  width: 500px; /* Kích thước nhỏ hơn */
+  height: auto; /* Giữ tỷ lệ */
+  display: block; /* Căn chỉnh */
+  margin: 0 auto; /* Giữa trung tâm */
+}
+/* Định dạng chung cho các nút */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Nút "Thêm vào giỏ hàng" */
+.button.add-to-cart {
+  background-color: #28a745;
+  color: white;
+}
+
+.button.add-to-cart:hover {
+  background-color: #218838;
+}
+
+/* Nút "Mua ngay" */
+.button.buy-now {
+  background-color: #dc3545;
+  color: white;
+}
+
+.button.buy-now:hover {
+  background-color: #c82333;
+}
+
+/* Định dạng vùng thông tin sản phẩm chi tiết */
+.product-detail-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.product-detail-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
